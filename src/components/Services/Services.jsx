@@ -86,7 +86,7 @@ const Services = () => {
       </section>
       {/* ================= RESINIS SERVICE ================= */}
 <div className="service-card">
-    <img src="/images/Product/resinis.png" alt="Resinis Service Image" />
+    <img src="/images/Product/resinis.png" alt="Resin packaging and processing service" />
   <h3>RESINIS</h3>
   <p className="service-desc">
     Our Resinins division provides complete post-harvest handling and packaging
