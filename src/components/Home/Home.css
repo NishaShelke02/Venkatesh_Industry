@@ -1,0 +1,618 @@
+/* ===============================
+   GENERAL STYLES
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ===============================
+   HERO SLIDER
+================================ */
+.hero-slider {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  background: #000; /* Fallback background */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1.05); /* Slight zoom for smooth transition */
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+  z-index: 1;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)); /* Gradient overlay for depth */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  z-index: 3;
+}
+
+.overlay h3 {
+  font-size: 2rem;
+  font-family: Georgia; /* More professional font */
+  color: #f7f6f5;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.overlay h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 10px 0 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
+}
+
+.hero-btn {
+  padding: 15px 40px;
+  border: 2px solid #ffad6a;
+  background: transparent;
+  color: #f6e7d6;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn:hover {
+  background: #caff6a;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 4;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.dot.active {
+  background: #caff6a;
+  border-color: #fff;
+  transform: scale(1.2);
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* ===============================
+   RESPONSIVE FOR HERO SLIDER
+================================ */
+@media (max-width: 768px) {
+  .overlay h3 {
+    font-size: 1.5rem;
+  }
+
+  .overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  .hero-slider {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+
+  .hero-slider {
+    height: 60vh;
+  }
+}
+
+/* ===============================
+   WELCOME SECTION
+================================ */
+/* ================= WELCOME SECTION CSS ================= */
+
+/* General Styles */
+.welcome-section {
+  background: linear-gradient(135deg, #f9f5e7 0%, #f0ecdf 100%); /* Light turmeric-inspired gradient background */
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #4a3c28; /* Earthy brown text color */
+  overflow: hidden; /* For animation effects */
+  position: relative;
+}
+
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left Image */
+.welcome-image {
+  flex: 1;
+  min-width: 300px;
+  animation: slideInLeft 1.5s ease-out; /* Slide in from left */
+}
+
+.welcome-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.3); /* Golden shadow for turmeric theme */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-image img:hover {
+  transform: scale(1.05); /* Subtle zoom on hover */
+  box-shadow: 0 15px 40px rgba(255, 193, 7, 0.5);
+}
+
+/* Right Content */
+.welcome-content {
+  flex: 1;
+  min-width: 300px;
+  animation: fadeInUp 1.5s ease-out 0.5s both; /* Fade in with slight delay */
+}
+
+.welcome-content h4 {
+  font-size: 1.2rem;
+  color: #d4a574; /* Warm orange accent */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.welcome-content h2 {
+  font-size: 2.5rem;
+  color: #8b4513; /* Darker brown for emphasis */
+  margin-bottom: 20px;
+  line-height: 1.2;
+  animation: textGlow 2s ease-in-out infinite alternate; /* Subtle glow animation */
+}
+
+.welcome-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #5d4e37; /* Slightly lighter brown */
+}
+
+.welcome-content h5 {
+  font-size: 1.3rem;
+  color: #d4a574; /* Matching accent color */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.welcome-content h5::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #ffa500); /* Golden to orange line */
+  animation: lineExpand 1s ease-out 1s both; /* Expanding line animation */
+}
+
+.welcome-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.welcome-content ul li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  color: #5d4e37;
+}
+
+.welcome-content ul li::before {
+  content: '🌿'; /* Turmeric leaf emoji for theme */
+  position: absolute;
+  left: 0;
+  color: #d4a574;
+  animation: bounce 2s infinite; /* Bouncing bullet point */
+}
+
+.welcome-content strong {
+  color: #8b4513; /* Emphasize product name */
+  font-weight: bold;
+}
+
+.welcome-btn {
+  background: linear-gradient(45deg, #ffd700, #ffa500); /* Golden gradient button */
+  color: #4a3c28;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+  animation: pulse 2s infinite; /* Pulsing animation */
+}
+
+.welcome-btn:hover {
+  background: linear-gradient(45deg, #ffa500, #ff8c00); /* Darker on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.6);
+}
+
+/* Keyframe Animations */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 193, 7, 0.8), 0 0 30px rgba(255, 193, 7, 0.6);
+  }
+}
+
+@keyframes lineExpand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50px;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+  }
+  50% {
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.8);
+  }
+  100% {
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .welcome-content h2 {
+    font-size: 2rem;
+  }
+  .welcome-image {
+    animation: fadeInUp 1.5s ease-out; /* Adjust for mobile */
+  }
+}
+/* ================= FACTSHEET ================= */
+.facts-section {
+  background: #020a2c;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.facts-header h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.facts-header p {
+  max-width: 700px;
+  margin: auto;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+.facts-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-top: 1px solid #444;
+  padding-top: 40px;
+}
+
+.fact-card {
+  width: 220px;
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.fact-card.active {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.fact-icon {
+  font-size: 40px;
+  color: #ffc107;
+  margin-bottom: 15px;
+}
+
+.fact-card h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.fact-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+/* ================= OUR PRODUCTS SECTION CSS ================= */
+
+/* ================= OUR PRODUCTS SECTION CSS ================= */
+
+/* General Styles */
+.products-section {
+  background: linear-gradient(135deg, #f9f5e7 0%, #f0ecdf 100%); /* Light turmeric-inspired gradient background */
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #4a3c28; /* Earthy brown text color */
+  text-align: center;
+  overflow: hidden; /* For animation effects */
+}
+
+.products-header {
+  margin-bottom: 40px;
+  animation: fadeInDown 1s ease-out; /* Header fades in from top */
+}
+
+.products-header h2 {
+  font-size: 2.5rem;
+  color: #8b4513; /* Darker brown for emphasis */
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(255, 193, 7, 0.3); /* Subtle shadow */
+}
+
+.products-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #5d4e37; /* Slightly lighter brown */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.2); /* Golden shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideUp 0.8s ease-out both; /* Staggered slide-up animation */
+  animation-delay: calc(var(--i) * 0.2s); /* Delay each card by 0.2s */
+}
+
+.product-card:hover {
+  transform: translateY(-10px); /* Lift on hover */
+  box-shadow: 0 12px 30px rgba(255, 193, 7, 0.4);
+}
+
+.product-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-img img {
+  transform: scale(1.1); /* Zoom image on hover */
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 193, 7, 0.3); /* Semi-transparent golden overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.product-overlay span {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+  animation: bounceArrow 1s infinite; /* Bouncing arrow animation */
+}
+
+.product-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-info h3 {
+  font-size: 1.3rem;
+  color: #4a3c28;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.read-more {
+  color: #d4a574; /* Warm orange accent */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #8b4513; /* Darker on hover */
+}
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceArrow {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .products-header h2 {
+    font-size: 2rem;
+  }
+  .products-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .product-card {
+    animation-delay: calc(var(--i) * 0.15s); /* Shorter delay on mobile */
+  }
+}

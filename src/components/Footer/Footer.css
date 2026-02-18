@@ -1,0 +1,162 @@
+/* Footer.css */
+
+.footer {
+  background-color: #000000; /* Black background */
+  color: #ecf0f1; /* Light text color for contrast */
+  padding: 40px 0 20px;
+  font-family: 'Arial', sans-serif; /* Assuming a standard font; adjust if needed */
+  margin-top: auto; /* Ensures footer sticks to bottom if using flexbox in main layout */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  gap: 20px; /* Space between sections */
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  color: #f39c12; /* Accent color for headings */
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-about {
+  max-width: 300px; /* Limit width for description */
+}
+
+.footer-about p {
+  line-height: 1.6;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.footer-logo {
+  width: 120px; /* Adjust logo size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.footer-socials a {
+  color: #ecf0f1;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #f39c12; /* Hover effect */
+}
+
+.footer-links ul,
+.footer-products ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-products li {
+  margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-products a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-products a:hover {
+  color: #f39c12; /* Hover effect */
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #f39c12; /* Icon color */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #333333; /* Darker border for contrast on black */
+  margin-top: 20px;
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .footer-about {
+    max-width: unset;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-contact-item {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 0 15px;
+  }
+
+  .footer-container {
+    padding: 0 10px;
+  }
+
+  .footer-section h4 {
+    font-size: 16px;
+  }
+
+  .footer-about p {
+    font-size: 13px;
+  }
+
+  .footer-links a,
+  .footer-products a,
+  .footer-contact-item {
+    font-size: 13px;
+  }
+}
