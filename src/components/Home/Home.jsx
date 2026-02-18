@@ -152,7 +152,10 @@ const Home = () => {
       </div>
 
       {/* ================= WELCOME SECTION ================= */}
-<section className="welcome-section">
+<section
+  className={`welcome-section ${show ? "show" : ""}`}
+  ref={sectionRef}
+>
   <div className="welcome-container">
     
     {/* Left Image */}
