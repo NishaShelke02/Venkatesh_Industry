@@ -45,7 +45,7 @@ const About = () => {
             </p>
 
             <p>
-              With over <strong>70+ years of experience</strong>, we have built strong relationships with farmers, traders,
+              With over <strong>75+ years of experience</strong>, we have built strong relationships with farmers, traders,
               and customers through reliability, transparency, and ethical business practices.
             </p>
 
@@ -92,7 +92,7 @@ const About = () => {
                 <div>
                   <h4>Three Generations of Expertise</h4>
                   <ul className="about-list">
-                    <li>70+ years of hands-on industry experience</li>
+                    <li>75+ years of hands-on industry experience</li>
                     <li>Deep knowledge of crop quality and sourcing</li>
                     <li>Modern processing with traditional understanding</li>
                     <li>Consistent quality in every shipment</li>
@@ -166,7 +166,7 @@ const About = () => {
           <div className="why-choose-grid">
             <div className="why-card">
               <FaCheckCircle className="why-icon" />
-              <h3>70+ Years of Legacy</h3>
+              <h3>75+ Years of Legacy</h3>
               <p>
                 Decades of experience across three generations ensure deep industry knowledge and reliable business practices.
               </p>

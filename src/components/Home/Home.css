@@ -47,16 +47,16 @@ body {
 
 .overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
   /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)); /* Gradient overlay for depth */
   display: flex;
   flex-direction: column;
+ 
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   color: #fff;
   padding: 20px;
   z-index: 3;
@@ -94,10 +94,35 @@ body {
 }
 
 .hero-btn:hover {
-  background: #caff6a;
+  background: #eea246;
   color: #000;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+/* Orange Box Text Style (Like Image) */
+.hero-text {
+  background: rgba(41, 39, 37, 0.9);
+  padding: 25px 40px;
+  max-width: 550px;
+  text-align: left;
+  margin-top: 180px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.hero-text h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: whitesmoke;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.hero-text h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #f1e492;
+  text-transform: uppercase;
 }
 
 .dots {

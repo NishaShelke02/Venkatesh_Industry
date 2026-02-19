@@ -1,0 +1,67 @@
+.contact-section {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+}
+
+/* Background Image */
+.contact-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.contact-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 60px;
+  color: #fff;
+}
+
+/* Left Content */
+.contact-left {
+  max-width: 65%;
+}
+
+.contact-title {
+  font-size: 48px;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Right Section */
+.contact-right {
+  background: linear-gradient(90deg, #b57a2a, #8a4f12);
+  padding: 60px 80px;
+}
+
+/* Button */
+.enquire-btn {
+  background: #d4c23a;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.enquire-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}

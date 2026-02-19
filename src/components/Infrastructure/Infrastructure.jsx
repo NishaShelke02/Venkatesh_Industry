@@ -52,8 +52,17 @@ const Infrastructure = () => {
             sieved, cleaned and finely ground while retaining their
             natural aroma and freshness.
           </p>
+           {/* Infrastructure Images */}
+    <div className="infra-gallery">
+      <img src="/images/infra4.png" alt="Processing Unit" />
+      <img src="/images/infra2.png" alt="Machinery" />
+      <img src="/images/infra3.png" alt="Cleaning Section" />
+      <img src="/images/prack.jpeg" alt="Packaging Unit" />
+      <img src="/images/infra1.jpg" alt="Storage Area" />
+    </div>
         </div>
       </section>
+
 
       {/* PRIVATE LABEL PACKAGING */}
       <section className="plp-section">

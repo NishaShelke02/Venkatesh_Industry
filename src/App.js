@@ -8,6 +8,7 @@ import Policies from "./components/Policies";
 import ScrollToTop from "./components/ScrollToTop";
 import Infrastructure from "./components/Infrastructure";
 import Services from "./components/Services";
+import Contact from "./components/Contact";
 
 import "./App.css";
 
@@ -30,7 +31,7 @@ function App() {
           <Route path="/policies" element={<Policies />} />
           <Route path="/infrastructure" element={<Infrastructure />} /> 
           <Route path="/services" element={<Services />} />
-          
+          <Route path="/contact" element={<Contact />} />
           {/* Add more routes as needed */}
         </Routes>
       </div>

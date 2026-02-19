@@ -48,6 +48,17 @@ const Services = () => {
             products for both domestic and international markets.
           </p>
 
+          {/* ===== New Image Grid Section ===== */}
+          <div className="turmeric-gallery">
+            <img src="/images/infra3.png" alt="Turmeric Cleaning" />
+            <img src="/images/infra2.png" alt="Turmeric Polishing" />
+            <img src="/images/grind.png" alt="Turmeric Grinding" />
+            <img src="/images/Home4.png" alt="Quality Testing" />
+            <img src="/images/turmeric-5.jpg" alt="Packaging" />
+            <img src="/images/infra1.png" alt="Storage" />
+          </div>
+          {/* ===================================== */}
+
           <ul className="service-list">
             <li>
               <strong>Premium Raw Material Sourcing:</strong> High-quality turmeric
@@ -84,49 +95,54 @@ const Services = () => {
           </ul>
         </div>
       </section>
+
       {/* ================= RESINIS SERVICE ================= */}
-<div className="service-card">
-    <img src="/images/Product/resinis.png" alt="Resin packaging and processing service" />
-  <h3>RESINIS</h3>
-  <p className="service-desc">
-    Our Resinins division provides complete post-harvest handling and packaging
-    solutions designed to maintain product quality, safety, and market readiness.
-    We ensure every product is processed in a clean, controlled, and efficient
-    environment that meets international standards.
-  </p>
+      <div className="service-card">
+        <img
+          src="/images/Product/Raisin.png"
+          alt="Raisins packaging and processing service"
+        />
+        <h3>RESINIS</h3>
+        <p className="service-desc">
+          Our Raisins division provides complete post-harvest handling and
+          packaging solutions designed to maintain product quality, safety, and
+          market readiness. We ensure every product is processed in a clean,
+          controlled, and efficient environment that meets international
+          standards.
+        </p>
 
-  <ul className="service-list">
-    <li>
-      <strong>Industrial Netting:</strong> Secure and breathable netting solutions
-      that protect products while allowing proper air circulation to preserve
-      freshness and quality.
-    </li>
+        <ul className="service-list">
+          <li>
+            <strong>Industrial Netting:</strong> Secure and breathable netting
+            solutions that protect products while allowing proper air
+            circulation to preserve freshness and quality.
+          </li>
 
-    <li>
-      <strong>Professional Washing & Drying:</strong> Advanced cleaning and drying
-      processes using food-safe and material-safe methods to remove impurities
-      and maintain hygiene.
-    </li>
+          <li>
+            <strong>Professional Washing & Drying:</strong> Advanced cleaning
+            and drying processes using food-safe and material-safe methods to
+            remove impurities and maintain hygiene.
+          </li>
 
-    <li>
-      <strong>Precision Tray Packing:</strong> Systematic and organized tray
-      arrangements that ensure efficient handling, better presentation, and
-      safe transportation.
-    </li>
+          <li>
+            <strong>Precision Tray Packing:</strong> Systematic and organized
+            tray arrangements that ensure efficient handling, better
+            presentation, and safe transportation.
+          </li>
 
-    <li>
-      <strong>Customized Box Packaging:</strong> Packaging solutions designed as
-      per product size, quantity, and branding requirements for both domestic
-      and export markets.
-    </li>
+          <li>
+            <strong>Customized Box Packaging:</strong> Packaging solutions
+            designed as per product size, quantity, and branding requirements
+            for both domestic and export markets.
+          </li>
 
-    <li>
-      <strong>Hygienic Maintenance:</strong> Processing and storage in a
-      climate-controlled, sanitized facility that follows strict quality and
-      safety standards.
-    </li>
-  </ul>
-</div>
+          <li>
+            <strong>Hygienic Maintenance:</strong> Processing and storage in a
+            climate-controlled, sanitized facility that follows strict quality
+            and safety standards.
+          </li>
+        </ul>
+      </div>
     </>
   );
 };

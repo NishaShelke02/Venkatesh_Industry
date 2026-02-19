@@ -7,27 +7,33 @@ import "./Home.css";
 const slides = [
   {
     id: 1,
-    title: "From farm to firm",
-    
-    image: "/images/Home.png",
+    title: "LARGEST MANUFACTURER",
+    subtitle: "& GRINDER OF TURMERIC",
+    image: "/images/Home.JPG",
   },
   {
     id: 2,
-    title: "Pure Natural",
-    
+    title: "PREMIUM QUALITY",
+    subtitle: "PURE NATURAL TURMERIC",
     image: "/images/Home1.png",
   },
   {
     id: 3,
-    title: "We Are Serve The Best Service",
-    
+    title: "INDIA’S TRUSTED",
+    subtitle: "TURMERIC PROCESSOR & EXPORTER",
     image: "/images/Home3.png",
   },
   {
     id: 4,
-    title: "Maintaining Quality Of Product 100% Organic",
-    
+    title: "MAINTAINING",
+    subtitle: "INTERNATIONAL QUALITY STANDARDS",
     image: "/images/Home4.png",
+  },
+  {
+    id: 5,
+    title:"Raisins (Kismis Indian)",
+    subtitle: "Premium Quality Raisins",
+    image: "/images/Home5.png",
   },
 ];
 
@@ -35,7 +41,7 @@ const slides = [
 const facts = [
   {
     id: 1,
-    value: "1952",
+    value: "1951",
     title: "Year of Establishment",
     icon: <FaBuilding />,
   },
@@ -47,7 +53,7 @@ const facts = [
   },
   {
     id: 3,
-    value: "Upto 25 People",
+    value: "Upto 50 People",
     title: "Total Number of Employees",
     icon: <FaUsers />,
   },
@@ -124,32 +130,36 @@ const Home = () => {
 
   return (
     <>
-      {/* ================= HERO SLIDER ================= */}
-      <div className="hero-slider">
-        {slides.map((slide, index) => (
-          <div
-            key={slide.id}
-            className={`slide ${index === current ? "active" : ""}`}
-            style={{ backgroundImage: `url(${slide.image})` }}
-          >
-            <div className="overlay">
-              <h3>{slide.title}</h3>
-              <h1>{slide.subtitle}</h1>
-              
-            </div>
-          </div>
-        ))}
-
-        <div className="dots">
-          {slides.map((_, index) => (
-            <span
-              key={index}
-              className={`dot ${current === index ? "active" : ""}`}
-              onClick={() => setCurrent(index)}
-            />
-          ))}
+     {/* ================= HERO SLIDER ================= */}
+<div className="hero-slider">
+  {slides.map((slide, index) => (
+    <div
+      key={slide.id}
+      className={`slide ${index === current ? "active" : ""}`}
+      style={{ backgroundImage: `url(${slide.image})` }}
+    >
+      {/* Overlay */}
+      <div className="overlay">
+        <div className="hero-text">
+          <h2>{slide.title}</h2>
+          {slide.subtitle && <h3>{slide.subtitle}</h3>}
+          
         </div>
       </div>
+    </div>
+  ))}
+
+  {/* Dots */}
+  <div className="dots">
+    {slides.map((_, index) => (
+      <span
+        key={index}
+        className={`dot ${current === index ? "active" : ""}`}
+        onClick={() => setCurrent(index)}
+      />
+    ))}
+  </div>
+</div>
 
       {/* ================= WELCOME SECTION ================= */}
 <section
