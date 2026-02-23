@@ -10,7 +10,7 @@ const Services = () => {
         {/* Background Image */}
         <img
           src="/images/services.png"
-          alt="Services"
+          alt=""
           className="services-bg"
         />
 
@@ -100,7 +100,7 @@ const Services = () => {
       <div className="service-card">
         <img
           src="/images/Product/Raisin.png"
-          alt="Raisins packaging and processing service"
+          alt=""
         />
         <h3>RESINIS</h3>
         <p className="service-desc">

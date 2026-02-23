@@ -32,6 +32,7 @@ const Contact = () => {
           <button className="enquire-btn">ENQUIRE NOW</button>
         </div>
       </div>
+      
     </section>
   );
 };

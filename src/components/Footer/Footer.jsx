@@ -87,7 +87,7 @@ return ( <footer className="footer"> <div className="footer-container">
       </div>
       <div className="footer-contact-item">
         <HiOutlineMail className="footer-icon" />
-        <span>shivamtraders.5682@gmail.com</span>
+        <span>info@venkateshindustries.in</span>
       </div>
       <div className="footer-contact-item">
         <FaGlobeAmericas className="footer-icon" />

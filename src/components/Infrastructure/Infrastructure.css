@@ -238,3 +238,34 @@
 /* ===========================
    POLICY BUTTON    
 =========================== */
+/* ================= VIDEO SECTION ================= */
+
+.infra-video-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.infra-video-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.infra-video-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #8b4513;
+}
+
+.infra-video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .infra-video-container h2 {
+    font-size: 24px;
+  }
+}

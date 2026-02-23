@@ -61,7 +61,7 @@ const Navbar = () => {
           <a href="mailto:shivamtraders.5682@gmail.com" className="top-item">
             <HiOutlineMail className="top-icon" />
             <div className="top-text">
-              <b>info@venkateshindustries.com</b>
+              <b>info@venkateshindustries.in</b>
               <p>Email Us</p>
             </div>
           </a>
@@ -117,7 +117,7 @@ const Navbar = () => {
           </li>
 
           <li><Link to="/services">SERVICES</Link></li>
-          <li><Link to="/brands">BRANDS</Link></li>
+         
           <li><Link to="/infrastructure">INFRASTRUCTURE</Link></li>
           <li><Link to="/policies">POLICIES</Link></li>
           <li><Link to="/blogs">BLOGS</Link></li>

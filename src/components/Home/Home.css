@@ -26,8 +26,7 @@ body {
 
 .slide {
   position: absolute;
-  top: 0;
-  left: 0;
+  
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -47,18 +46,18 @@ body {
 
 .overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)); /* Gradient overlay for depth */
   display: flex;
   flex-direction: column;
- 
-  align-items: flex-end;
-  justify-content: center;
+ background: rgba(0, 0, 0, 0.35); /* Semi-transparent black overlay */
+  align-items: flex-start;
+  justify-content: flex-end;
   color: #fff;
-  padding: 20px;
+  padding: 40px;
   z-index: 3;
 }
 
@@ -94,16 +93,17 @@ body {
 }
 
 .hero-btn:hover {
-  background: #eea246;
+  background: #ffd700;
   color: #000;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 /* Orange Box Text Style (Like Image) */
 .hero-text {
-  background: rgba(41, 39, 37, 0.9);
-  padding: 25px 40px;
-  max-width: 550px;
+  
+  
+  padding: 25px 35px;
+  max-width: 500px;
   text-align: left;
   margin-top: 180px;
   margin-right: 10px;
@@ -111,17 +111,17 @@ body {
 }
 
 .hero-text h2 {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 700;
-  color: whitesmoke;
+  color: #fff;
   margin-bottom: 5px;
   text-transform: uppercase;
 }
 
 .hero-text h3 {
-  font-size: 28px;
-  font-weight: 600;
-  color: #f1e492;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffd700;
   text-transform: uppercase;
 }
 
@@ -136,8 +136,8 @@ body {
 }
 
 .dot {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   cursor: pointer;
@@ -146,7 +146,7 @@ body {
 }
 
 .dot.active {
-  background: #caff6a;
+  background: #ffd700;
   border-color: #fff;
   transform: scale(1.2);
 }
@@ -158,262 +158,251 @@ body {
 /* ===============================
    RESPONSIVE FOR HERO SLIDER
 ================================ */
-@media (max-width: 768px) {
-  .overlay h3 {
-    font-size: 1.5rem;
+@media (max-width: 992px) {
+  .hero-text {
+    max-width: 400px;
   }
 
-  .overlay h1 {
-    font-size: 2.5rem;
+  .hero-text h2 {
+    font-size: 26px;
+  }
+
+  .hero-text h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-slider {
+    height: 75vh;
+  }
+
+  .overlay {
+    justify-content: center;   /* Center on mobile */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .hero-text {
+    max-width: 90%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 22px;
+  }
+
+  .hero-text h3 {
+    font-size: 18px;
   }
 
   .hero-btn {
-    padding: 12px 30px;
-    font-size: 1rem;
-  }
-
-  .hero-slider {
-    height: 70vh;
+    padding: 10px 20px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
-  .overlay h3 {
-    font-size: 1.2rem;
+
+  .hero-slider {
+    height: 65vh;
   }
 
-  .overlay h1 {
-    font-size: 2rem;
+  .hero-text h2 {
+    font-size: 18px;
+  }
+
+  .hero-text h3 {
+    font-size: 15px;
   }
 
   .hero-btn {
-    padding: 10px 25px;
-    font-size: 0.9rem;
-  }
-
-  .hero-slider {
-    height: 60vh;
+    font-size: 13px;
   }
 }
 
 /* ===============================
-   WELCOME SECTION
+   WELCOME SECTION (PROFESSIONAL)
 ================================ */
-/* ================= WELCOME SECTION CSS ================= */
 
-/* General Styles */
 .welcome-section {
-  background: linear-gradient(135deg, #f9f5e7 0%, #f0ecdf 100%); /* Light turmeric-inspired gradient background */
-  padding: 60px 20px;
-  font-family: 'Arial', sans-serif;
-  color: #4a3c28; /* Earthy brown text color */
-  overflow: hidden; /* For animation effects */
-  position: relative;
+  background: linear-gradient(135deg, #f9f5e7 0%, #f0ecdf 100%);
+  padding: 70px 20px;
+  font-family: Arial, sans-serif;
+  color: #4a3c28;
 }
 
+/* Container */
 .welcome-container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 50px;
 }
 
-/* Left Image */
+/* ================= IMAGE ================= */
 .welcome-image {
   flex: 1;
-  min-width: 300px;
-  animation: slideInLeft 1.5s ease-out; /* Slide in from left */
 }
 
 .welcome-image img {
   width: 100%;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.3); /* Golden shadow for turmeric theme */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 520px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.25);
+  transition: transform 0.3s ease;
 }
 
 .welcome-image img:hover {
-  transform: scale(1.05); /* Subtle zoom on hover */
-  box-shadow: 0 15px 40px rgba(255, 193, 7, 0.5);
+  transform: scale(1.04);
 }
 
-/* Right Content */
+/* ================= CONTENT ================= */
 .welcome-content {
   flex: 1;
-  min-width: 300px;
-  animation: fadeInUp 1.5s ease-out 0.5s both; /* Fade in with slight delay */
 }
 
 .welcome-content h4 {
-  font-size: 1.2rem;
-  color: #d4a574; /* Warm orange accent */
-  margin-bottom: 10px;
+  font-size: 14px;
+  color: #d4a574;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .welcome-content h2 {
-  font-size: 2.5rem;
-  color: #8b4513; /* Darker brown for emphasis */
+  font-size: 36px;
+  color: #8b4513;
   margin-bottom: 20px;
-  line-height: 1.2;
-  animation: textGlow 2s ease-in-out infinite alternate; /* Subtle glow animation */
+  line-height: 1.3;
 }
 
 .welcome-content p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.7;
   margin-bottom: 20px;
-  color: #5d4e37; /* Slightly lighter brown */
+  color: #5d4e37;
 }
 
+/* Features */
 .welcome-content h5 {
-  font-size: 1.3rem;
-  color: #d4a574; /* Matching accent color */
-  margin-top: 30px;
+  font-size: 18px;
+  color: #8b4513;
   margin-bottom: 10px;
-  position: relative;
-}
-
-.welcome-content h5::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 50px;
-  height: 3px;
-  background: linear-gradient(90deg, #ffd700, #ffa500); /* Golden to orange line */
-  animation: lineExpand 1s ease-out 1s both; /* Expanding line animation */
 }
 
 .welcome-content ul {
   list-style: none;
   padding: 0;
-  margin-bottom: 20px;
 }
 
 .welcome-content ul li {
-  font-size: 1rem;
-  line-height: 1.6;
   margin-bottom: 10px;
-  padding-left: 20px;
+  font-size: 15px;
+  padding-left: 22px;
   position: relative;
-  color: #5d4e37;
 }
 
 .welcome-content ul li::before {
-  content: '🌿'; /* Turmeric leaf emoji for theme */
+  content: "✔";
   position: absolute;
   left: 0;
   color: #d4a574;
-  animation: bounce 2s infinite; /* Bouncing bullet point */
-}
-
-.welcome-content strong {
-  color: #8b4513; /* Emphasize product name */
   font-weight: bold;
 }
 
+/* Button */
 .welcome-btn {
-  background: linear-gradient(45deg, #ffd700, #ffa500); /* Golden gradient button */
-  color: #4a3c28;
+  margin-top: 20px;
+  background: linear-gradient(45deg, #ffd700, #ffa500);
   border: none;
-  padding: 12px 30px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 25px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
-  animation: pulse 2s infinite; /* Pulsing animation */
+  color: #4a3c28;
+  transition: 0.3s ease;
 }
 
 .welcome-btn:hover {
-  background: linear-gradient(45deg, #ffa500, #ff8c00); /* Darker on hover */
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.6);
+  background: linear-gradient(45deg, #ffa500, #ff8c00);
+  transform: translateY(-2px);
 }
 
-/* Keyframe Animations */
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
+/* ===============================
+   TABLET VIEW
+================================ */
+@media (max-width: 992px) {
+  .welcome-container {
+    gap: 30px;
   }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
-@keyframes fadeInUp {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+  .welcome-content h2 {
+    font-size: 30px;
   }
 }
 
-@keyframes textGlow {
-  from {
-    text-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
-  }
-  to {
-    text-shadow: 0 0 20px rgba(255, 193, 7, 0.8), 0 0 30px rgba(255, 193, 7, 0.6);
-  }
-}
-
-@keyframes lineExpand {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50px;
-  }
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-5px);
-  }
-  60% {
-    transform: translateY(-3px);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
-  }
-  50% {
-    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.8);
-  }
-  100% {
-    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
-  }
-}
-
-/* Responsive Design */
+/* ===============================
+   MOBILE VIEW
+================================ */
 @media (max-width: 768px) {
+
+  .welcome-section {
+    padding: 50px 15px;
+  }
+
   .welcome-container {
     flex-direction: column;
     text-align: center;
   }
-  .welcome-content h2 {
-    font-size: 2rem;
-  }
+
+  /* Image on top */
   .welcome-image {
-    animation: fadeInUp 1.5s ease-out; /* Adjust for mobile */
+    order: 1;
+  }
+
+  .welcome-content {
+    order: 2;
+  }
+
+  .welcome-content h2 {
+    font-size: 26px;
+  }
+
+  .welcome-content h4 {
+    font-size: 13px;
+  }
+
+  .welcome-content p {
+    font-size: 14px;
+  }
+
+  .welcome-content ul li {
+    text-align: left;
+  }
+
+  .welcome-image img {
+    max-width: 100%;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+@media (max-width: 480px) {
+
+  .welcome-content h2 {
+    font-size: 22px;
+  }
+
+  .welcome-btn {
+    padding: 10px 22px;
+    font-size: 14px;
   }
 }
 /* ================= FACTSHEET ================= */

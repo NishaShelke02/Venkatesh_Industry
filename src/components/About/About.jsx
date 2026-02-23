@@ -197,6 +197,35 @@ const About = () => {
             </div>
           </div>
         </div>
+        {/* DIRECTORS SECTION */}
+<div className="directors-section">
+  <h2 className="section-title">Our Leadership</h2>
+  <p className="section-subtitle">
+    Guided by experience, vision, and commitment to quality
+  </p>
+
+  <div className="directors-grid">
+
+    <div className="director-card">
+      <img src="/about/mahesh.jpeg" alt="Mahesh Gadave" />
+      <h3>Mahesh Gadave</h3>
+      <p>Director</p>
+    </div>
+
+    <div className="director-card">
+      <img src="/about/vrushali.jpeg" alt="Vrushali Gadave" />
+      <h3>Vrushali Gadave</h3>
+      <p>Director</p>
+    </div>
+
+    <div className="director-card">
+      <img src="/about/yash.jpeg" alt="Yash Gadave" />
+      <h3>Yash Gadave</h3>
+      <p>Director</p>
+    </div>
+
+  </div>
+</div>
       </div>
     </div>
   );
