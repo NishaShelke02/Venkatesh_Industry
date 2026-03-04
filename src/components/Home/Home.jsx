@@ -31,7 +31,7 @@ const slides = [
   },
   {
     id: 5,
-    title: "Raisins (Kismis Indian)",
+    title: "Raisins (Dry Grapes)",
     subtitle: "Premium Quality Raisins",
     image: "/images/Home5.png",
   },
@@ -89,7 +89,7 @@ const products = [
   },
   {
     id: 5,
-    name: "Raisins (Kismis Indian)",
+    name: "Raisins (Dry Grapes)",
     image: "/images/Product/raisins.png",
   },
 ];

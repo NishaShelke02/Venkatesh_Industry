@@ -107,12 +107,12 @@ const Navbar = () => {
               <li><Link to="/products/broken-turmeric">Broken Turmeric</Link></li>
               <li><Link to="/products/bulb-turmeric">Bulb Turmeric</Link></li>
               <li><Link to="/products/turmeric-powder">Turmeric Powder</Link></li>
-              <li><Link to="/products/curma-turmeric-powder">Curma Turmeric Powder</Link></li>
+              <li><Link to="/products/curcuma-turmeric-powder">Curcuma Turmeric Powder</Link></li>
               <li><Link to="/products/nature-turmeric-powder">Nature Turmeric Powder</Link></li>
               <li><Link to="/products/global-turmeric-powder">Global Turmeric Powder</Link></li>
-              <li><Link to="/products/salem-turmeric-powder">Salem Turmeric Powder</Link></li>
+              <li><Link to="/products/salem-turmeric-powder">AT Salem Turmeric Powder</Link></li>
               <li><Link to="/products/double-lotus-turmeric-powder">Double Lotus Turmeric Powder</Link></li>
-              <li><Link to="/products/indian-raisins">Raisins (Kismis)</Link></li>
+              <li><Link to="/products/indian-raisins">Raisins (Dry Grapes)</Link></li>
             </ul>
           </li>
 
@@ -120,7 +120,7 @@ const Navbar = () => {
          
           <li><Link to="/infrastructure">INFRASTRUCTURE</Link></li>
           <li><Link to="/policies">POLICIES</Link></li>
-          <li><Link to="/blogs">BLOGS</Link></li>
+          {/* <li><Link to="/blogs">BLOGS</Link></li> */}
           <li><Link to="/contact">CONTACT US</Link></li>
         </ul>
       </nav>

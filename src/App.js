@@ -9,6 +9,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import Infrastructure from "./components/Infrastructure";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Product from "./components/Product";
+import Blogs from "./components/Blogs";
+import Whatsapp from "./components/Whatsapp";
 
 import "./App.css";
 
@@ -32,9 +35,12 @@ function App() {
           <Route path="/infrastructure" element={<Infrastructure />} /> 
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/products/:slug" element={<Product />} />
+          <Route path="/blogs" element={<Blogs />} />
           {/* Add more routes as needed */}
         </Routes>
       </div>
+      <Whatsapp />
 
       <Footer />
     </>

@@ -102,7 +102,7 @@ const Services = () => {
           src="/images/Product/Raisin.png"
           alt=""
         />
-        <h3>RESINIS</h3>
+        <h3>Raisins (Dry Grapes)</h3>
         <p className="service-desc">
           Our Raisins division provides complete post-harvest handling and
           packaging solutions designed to maintain product quality, safety, and
