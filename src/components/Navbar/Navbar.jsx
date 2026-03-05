@@ -37,7 +37,7 @@ const Navbar = () => {
       {/* ---------------- TOP BAR ---------------- */}
       <div className="top-bar">
         <div className="logo-section">
-          <img src="/images/logo.png" alt="Venkatesh Industries" className="logo-img" />
+          <img src="/logo.png" alt="Venkatesh Industries" className="logo-img" />
         </div>
 
         <div

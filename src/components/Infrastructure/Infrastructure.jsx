@@ -52,21 +52,20 @@ const Infrastructure = () => {
             sieved, cleaned and finely ground while retaining their
             natural aroma and freshness.
           </p>
-          {/* INFRASTRUCTURE VIDEO */}
+        {/* INFRASTRUCTURE VIDEO */}
 <section className="infra-video-section">
   <div className="infra-video-container">
     <h2>Our Manufacturing Process</h2>
 
-    <video
-      className="infra-video"
-      controls
-      autoPlay
-      muted
-      loop
-    >
-      <source src="/videos/Blogs.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <iframe
+      src="https://drive.google.com/file/d/17rPNVS4AC1fpVFojeWnHZPxzUAVtjuCw/preview"
+      width="100%"
+      height="480"
+      allow="autoplay"
+      title="Manufacturing Video"
+      style={{ border: "none", borderRadius: "10px" }}
+    ></iframe>
+
   </div>
 </section>
            {/* Infrastructure Images */}

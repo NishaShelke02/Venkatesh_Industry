@@ -33,14 +33,38 @@ a {
 }
 
 /* ----- LOGO ----- */
+/* ----- LOGO ----- */
+
 .logo-section {
-  text-align: left;
+  display: flex;
+  align-items: center;
   flex: 1;
+  position: relative;
 }
 
 .logo-img {
-  width: 160px;
-  height: auto;
+  width: 240px;
+  height: 85px;           /* keeps image ratio */
+  max-width: 180px;        /* limits logo size on larger screens */
+  object-fit: contain;
+   position: absolute;
+  top: -40px;          /* Move logo above top-bar */
+  left: 10px;
+  z-index: 2000;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 120px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .logo-img {
+    width: 100px;
+  }
 }
 
 /* ----- HAMBURGER (Mobile Only) ----- */
@@ -92,6 +116,7 @@ a {
    MAIN NAVBAR MENU
 --------------------------------------------------------- */
 .navbar {
+  
   width: 100%;
   background: #000;
   padding: 12px 0;

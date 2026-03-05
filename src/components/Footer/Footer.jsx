@@ -8,11 +8,11 @@ import "./Footer.css";
 const Footer = () => {
 return ( <footer className="footer"> <div className="footer-container">
 
-```
+
     {/* ----- Logo & About ----- */}
     <div className="footer-section footer-about">
       <img
-        src="/images/logo.png"
+        src="/logo.png"
         alt="Venkatesh Industries Logo"
         className="footer-logo"
       />
@@ -59,10 +59,10 @@ return ( <footer className="footer"> <div className="footer-container">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us</Link></li>
         <li><Link to="/services">Services</Link></li>
-        <li><Link to="/brands">Brands</Link></li>
+       
         <li><Link to="/infrastructure">Infrastructure</Link></li>
         <li><Link to="/policies">Policies</Link></li>
-        <li><Link to="/blogs">Blogs</Link></li>
+       
         <li><Link to="/contact">Contact Us</Link></li>
       </ul>
     </div>
@@ -74,7 +74,7 @@ return ( <footer className="footer"> <div className="footer-container">
         <li><Link to="/products/whole-turmeric">Whole Turmeric</Link></li>
         <li><Link to="/products/broken-turmeric">Broken Turmeric</Link></li>
         <li><Link to="/products/turmeric-powder">Turmeric Powder</Link></li>
-        <li><Link to="/products/indian-raisins">Raisins (Kismis)</Link></li>
+        <li><Link to="/products/indian-raisins">Raisins (Dry grapes)</Link></li>
       </ul>
     </div>
 

@@ -33,7 +33,7 @@ const slides = [
     id: 5,
     title: "Raisins (Dry Grapes)",
     subtitle: "Premium Quality Raisins",
-    image: "/images/Home5.png",
+    image: "/images/Home5.jpeg",
   },
 ];
 
