@@ -173,7 +173,13 @@
     "name": "Raisins (Dry Grapes)",
     "slug": "indian-raisins",
     "category": "Dry Fruits",
-    "image": "/images/products/raisins.jpg",
+    "image": "/images/product/kismiss.jpeg",
+      "gallery": [
+        "/images/product/kismiss.jpeg",
+        "/images/product/kismiss1.jpeg",
+        "/images/product/kismiss2.jpeg",
+        "/images/product/kismiss.png"
+      ],
     "description": "Naturally dried Indian raisins rich in taste and nutrition.",
     "features": [
       "Naturally Sweet",
