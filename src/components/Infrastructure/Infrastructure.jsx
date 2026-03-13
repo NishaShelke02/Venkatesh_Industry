@@ -92,13 +92,23 @@ const Infrastructure = () => {
             <span className="red"></span>
             <span className="yellow"></span>
           </div>
+          {/* PACKAGING PHOTOS GALLERY */}
+<section className="packaging-gallery-section">
+  <div className="packaging-gallery-container">
+    <h2 className="packaging-gallery-title">Our Packaging Solutions</h2>
+    
+    <div className="packaging-gallery">
+      <img src="/images/pack.jpeg" alt="Packaging Solution 1" />
+      <img src="/images/pack1.jpeg" alt="Packaging Solution 2" />
+      <img src="/images/pack2.jpeg" alt="Packaging Solution 3" />
+      <img src="/images/pack3.jpeg" alt="Packaging Solution 4" />
+      <img src="/images/pack4.jpeg" alt="Packaging Solution 5" />
+    </div>
+  </div>
+</section>
 
-          <div className="plp-image">
-            <img
-              src="/images/infra.png"
-              alt="Private Label Packaging"
-            />
-          </div>
+
+          
 
         </div>
       </section>
@@ -140,6 +150,7 @@ const Infrastructure = () => {
 
   </div>
 </section>
+
 
     </>
   );

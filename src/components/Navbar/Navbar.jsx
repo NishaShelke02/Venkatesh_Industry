@@ -104,9 +104,11 @@ const Navbar = () => {
 
             <ul className="dropdown-menu">
               <li><Link to="/products/whole-turmeric">Whole Turmeric</Link></li>
-              <li><Link to="/products/broken-turmeric">Broken Turmeric</Link></li>
+              <li><Link to="/products/broken-turmeric">Broken Turmeric(KANI)</Link></li>
               <li><Link to="/products/bulb-turmeric">Bulb Turmeric</Link></li>
               <li><Link to="/products/turmeric-powder">Turmeric Powder</Link></li>
+              <li><Link to="/products/salem-jumbo">Salem Jumbo(Lagadi)</Link></li>
+              <li><Link to="/products/nizam-finger">Nizam Finger</Link></li>
               <li><Link to="/products/curcuma-turmeric-powder">Curcuma Turmeric Powder</Link></li>
               <li><Link to="/products/nature-turmeric-powder">Nature Turmeric Powder</Link></li>
               <li><Link to="/products/global-turmeric-powder">Global Turmeric Powder</Link></li>

@@ -97,7 +97,7 @@ const Contact = () => {
     <div className="contact-page">
 
       {/* HERO */}
-      <div className="contact-hero">
+      <div className="contact-hero" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/Contact2.png)` }}>
         <div className="hero-overlay">
           <h1>Contact Us</h1>
           <p>
@@ -142,107 +142,126 @@ const Contact = () => {
 
       {/* FORM */}
       <div className="contact-form-section">
-        <div className="form-card">
-          <h2>Send Us a Message</h2>
-
-          <form onSubmit={handleSubmit}>
-
-            <div className="input-group">
-              <FaUser />
-              <input
-                type="text"
-                name="name"
-                placeholder="Full Name"
-                required
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="input-group">
-              <FaPhoneAlt />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                required
-                value={formData.phone}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="input-group">
-              <FaMapMarkerAlt />
-              <input
-                type="text"
-                name="address"
-                placeholder="Address"
-                required
-                value={formData.address}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="input-group">
-              <FaEnvelope />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                required
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="input-group">
-              <FaTag />
-              <select
-                name="product"
-                required
-                value={formData.product}
-                onChange={handleChange}
-              >
-                <option value="">Select Product</option>
-                {products.map((item, index) => (
-                  <option key={index} value={item.name}>
-                    {item.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <div className="input-group textarea-group">
-              <FaCommentAlt />
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                required
-                value={formData.message}
-                onChange={handleChange}
-              ></textarea>
-            </div>
-
-            <button type="submit">
-              <FaPaperPlane /> Send Message
-            </button>
-
-            {status && <p className="status-message">{status}</p>}
-
-          </form>
-
-          <div className="social-icons">
-            <a href="https://wa.me/919921056555" target="_blank" rel="noopener noreferrer">
-              <FaWhatsapp />
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-              <FaFacebook />
-            </a>
+        <div className="contact-container">
+          {/* GOOGLE MAP */}
+          <div className="map-section">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30547.7246121036!2d74.6125317!3d16.8528482!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1231cf95ba14b%3A0x983dc52686ad1325!2sVENKATESH%20INDUSTRIES!5e0!3m2!1sen!2sin!4v1773431377493!5m2!1sen!2sin"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Venkatesh Industries Location"
+            ></iframe>
           </div>
 
+          {/* FORM */}
+          <div className="form-section">
+            <div className="form-card">
+              <h2>Send Us a Message</h2>
+
+              <form onSubmit={handleSubmit}>
+
+                <div className="input-group">
+                  <FaUser />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className="input-group">
+                  <FaPhoneAlt />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    required
+                    value={formData.phone}
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className="input-group">
+                  <FaMapMarkerAlt />
+                  <input
+                    type="text"
+                    name="address"
+                    placeholder="Address"
+                    required
+                    value={formData.address}
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className="input-group">
+                  <FaEnvelope />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className="input-group">
+                  <FaTag />
+                  <select
+                    name="product"
+                    required
+                    value={formData.product}
+                    onChange={handleChange}
+                  >
+                    <option value="">Select Product</option>
+                    {products.map((item, index) => (
+                      <option key={index} value={item.name}>
+                        {item.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="input-group textarea-group">
+                  <FaCommentAlt />
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                    value={formData.message}
+                    onChange={handleChange}
+                  ></textarea>
+                </div>
+
+                <button type="submit">
+                  <FaPaperPlane /> Send Message
+                </button>
+
+                {status && <p className="status-message">{status}</p>}
+
+              </form>
+
+              <div className="social-icons">
+                <a href="https://wa.me/919921056555" target="_blank" rel="noopener noreferrer">
+                  <FaWhatsapp />
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin />
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                  <FaFacebook />
+                </a>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>

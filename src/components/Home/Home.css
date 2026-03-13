@@ -11,7 +11,9 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #333;
+  background: white;
 }
+
 
 /* ===============================
    HERO SLIDER
@@ -105,8 +107,8 @@ body {
   padding: 25px 35px;
   max-width: 500px;
   text-align: left;
-  margin-top: 180px;
-  margin-right: 10px;
+  
+ 
   border-radius: 50px;
 }
 
@@ -175,7 +177,9 @@ body {
 @media (max-width: 768px) {
 
   .hero-slider {
-    height: 75vh;
+    width:100%;
+  min-height:70vh;
+  height:auto;
   }
 
   .overlay {
@@ -228,7 +232,6 @@ body {
 ================================ */
 
 .welcome-section {
-  background: linear-gradient(135deg, #f9f5e7 0%, #f0ecdf 100%);
   padding: 70px 20px;
   font-family: Arial, sans-serif;
   color: #4a3c28;
@@ -466,7 +469,6 @@ body {
 
 /* General Styles */
 .products-section {
-  background: linear-gradient(135deg, #f9f5e7 0%, #f0ecdf 100%); /* Light turmeric-inspired gradient background */
   padding: 60px 20px;
   font-family: 'Arial', sans-serif;
   color: #4a3c28; /* Earthy brown text color */
@@ -496,9 +498,10 @@ body {
 
 .products-container {
   display: flex;
+  gap:20px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+ 
   max-width: 100%;
   margin: 0 auto 40px;
   padding: 0 20px;

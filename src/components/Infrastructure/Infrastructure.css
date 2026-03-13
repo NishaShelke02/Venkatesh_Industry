@@ -235,6 +235,77 @@
 .plp-btn a:hover {
   background: #fa8938;
 }
+
+/* ===========================
+   PACKAGING GALLERY
+=========================== */
+
+.packaging-gallery-section {
+  padding: 60px 8%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.packaging-gallery-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.packaging-gallery-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #8b4513;
+}
+
+.packaging-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.packaging-gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.packaging-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Responsive for Packaging Gallery */
+@media (max-width: 768px) {
+  .packaging-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .packaging-gallery img {
+    height: 200px;
+  }
+
+  .packaging-gallery-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .packaging-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .packaging-gallery img {
+    height: 180px;
+  }
+}
+
 /* ===========================
    POLICY BUTTON    
 =========================== */

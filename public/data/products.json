@@ -23,11 +23,11 @@
     "name": "Broken Turmeric",
     "slug": "broken-turmeric",
     "category": "Turmeric",
-    "image": "/images/Product/Broken.png",
+    "image": "/images/Product/kani.jpg",
       "gallery": [
-        "/images/Product/Broken.png",
-        "/images/Product/Broken1.png",
-        "/images/Product/Broken2.png"
+        "/images/Product/kani.jpg",
+        "/images/Product/kani1.jpg"
+        
       ],
    "description": "Venkatesh Industries offers premium quality Broken Turmeric processed from high-grade turmeric fingers. Rich in natural golden color, strong aroma, and high curcumin content. Machine cleaned and moisture controlled to ensure purity and long shelf life. Ideal for grinding, spice processing, bulk supply, and export.",
     "features": [
@@ -44,6 +44,8 @@
     "category": "Turmeric",
     "image": "/images/product/bulb.png",
      "gallery": [
+        "/images/product/bulb.jpg",
+        "/images/product/bulb1.jpg",
       "/images/product/bulb2.png",
       "/images/product/bulb1.png",
       "/images/product/bulb4.png"
@@ -77,6 +79,43 @@
   },
   {
     "id": 5,
+    "name": "Salem Jumbo (Lagadi)",
+    "slug": "salem-jumbo",
+    "category": "Turmeric",
+    "image": "/images/product/salem.png",
+     "gallery": [
+      "/images/product/salem.png",
+      "/images/product/salem1.png"
+    ],
+   "description": "Premium quality Salem Jumbo (Lagadi) Turmeric sourced from trusted farms with high curcumin content, rich golden color, and strong natural aroma. Carefully cleaned, properly dried, and moisture controlled to ensure purity and long shelf life. Ideal for grinding, spice manufacturing, food processing, bulk supply, and export. Trusted Salem Jumbo supplier offering consistent quality at competitive prices.",
+    "features": [
+      "Rich Aroma",
+      "Natural Processing",
+      "High Nutritional Value",
+      "Farm Fresh Quality"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Nizam Finger",
+    "slug": "nizam-finger",
+    "category": "Turmeric",
+    "image": "/images/product/nizam.png",
+     "gallery": [
+      "/images/product/nizam.png",
+      "/images/product/nizam2.png"
+    ],
+   "description": "Premium quality Nizam Finger Turmeric sourced from trusted farms with high curcumin content, rich golden color, and strong natural aroma. Carefully cleaned, properly dried, and moisture controlled to ensure purity and long shelf life. Ideal for grinding, spice manufacturing, food processing, bulk supply, and export. Trusted Nizam Finger supplier offering consistent quality at competitive prices.",
+    "features": [
+      "Rich Aroma",
+      "Natural Processing",
+      "High Nutritional Value",
+      "Farm Fresh Quality"
+    ]
+
+  },
+  {
+    "id": 7,
     "name": "Curcuma Turmeric Powder",
     "slug": "curcuma-turmeric-powder",
     "category": "Brand Products",
@@ -94,7 +133,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 8,
     "name": "Nature Turmeric Powder",
     "slug": "nature-turmeric-powder",
     "category": "Brand Products",
@@ -112,7 +151,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 9,
     "name": "Global Turmeric Powder",
     "slug": "global-turmeric-powder",
     "category": "Brand Products",
@@ -132,7 +171,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 10,
     "name": "AT Salem Turmeric Powder",
     "slug": "salem-turmeric-powder",
     "category": "Brand Products",
@@ -150,7 +189,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 11,
     "name": "Double Lotus Turmeric Powder",
     "slug": "double-lotus-turmeric-powder",
     "category": "Brand Products",
@@ -169,7 +208,7 @@
 ]
   },
   {
-    "id": 10,
+    "id": 12,
     "name": "Raisins (Dry Grapes)",
     "slug": "indian-raisins",
     "category": "Dry Fruits",

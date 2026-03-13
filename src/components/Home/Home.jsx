@@ -33,7 +33,7 @@ const slides = [
     id: 5,
     title: "Raisins (Dry Grapes)",
     subtitle: "Premium Quality Raisins",
-    image: "/images/Home5.jpeg",
+    image: "/images/kismiss.png",
   },
 ];
 
@@ -75,12 +75,12 @@ const products = [
   {
     id: 2,
     name: "Broken Turmeric",
-    image: "/images/Product/Broken1.png",
+    image: "/images/Product/kani.jpg",
   },
   {
     id: 3,
     name: "Bulb Turmeric",
-    image: "/images/Product/Bulb1.png",
+    image: "/images/Product/bulb.jpg",
   },
   {
     id: 4,
@@ -90,7 +90,7 @@ const products = [
   {
     id: 5,
     name: "Raisins (Dry Grapes)",
-    image: "/images/Product/raisins.png",
+    image: "/images/kismiss.png",
   },
 ];
 

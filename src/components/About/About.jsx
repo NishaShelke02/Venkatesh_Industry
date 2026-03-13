@@ -209,13 +209,13 @@ const About = () => {
     <div className="director-card">
       <img src="/about/mahesh.jpeg" alt="Mahesh Gadave" />
       <h3>Mahesh Gadave</h3>
-      <p>Director</p>
+      <p>Chairman</p>
     </div>
 
     <div className="director-card">
       <img src="/about/vrushali.jpeg" alt="Vrushali Gadave" />
       <h3>Vrushali Gadave</h3>
-      <p>Director</p>
+      <p>Managing Director</p>
     </div>
 
     <div className="director-card">
