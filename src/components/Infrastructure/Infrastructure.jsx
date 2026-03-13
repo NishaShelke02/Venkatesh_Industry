@@ -74,7 +74,7 @@ const Infrastructure = () => {
       <img src="/images/infra2.png" alt="Machinery" />
       <img src="/images/infra3.png" alt="Cleaning Section" />
       <img src="/images/prack.jpeg" alt="Packaging Unit" />
-      <img src="/images/infra1.jpg" alt="Storage Area" />
+      <img src="/images/infra1.JPG" alt="Storage Area" />
     </div>
         </div>
       </section>

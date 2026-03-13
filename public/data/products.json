@@ -44,11 +44,11 @@
     "category": "Turmeric",
     "image": "/images/product/Bulb5.png",
      "gallery": [
-        "/images/product/Bulb5.png",
-        "/images/product/bulb1.jpg",
-      "/images/product/bulb2.png",
-      "/images/product/bulb1.png",
-      "/images/product/bulb4.png"
+        "/images/Product/Bulb5.png",
+        "/images/Product/bulb1.jpg",
+      "/images/Product/bulb2.png",
+      "/images/Product/bulb1.png",
+      "/images/Product/bulb4.png"
     ],
     "description": "Premium quality Bulb Turmeric sourced from trusted farms with high curcumin content, rich golden color, and strong natural aroma. Carefully cleaned, properly dried, and moisture controlled to ensure purity and long shelf life. Ideal for grinding, spice manufacturing, food processing, bulk supply, and export. Trusted Bulb Turmeric supplier offering consistent quality at competitive prices.",
     "features": [
@@ -63,11 +63,11 @@
     "name": "Turmeric Powder",
     "slug": "turmeric-powder",
     "category": "Turmeric Powder",
-    "image": "/images/product/powder.png",
+    "image": "/images/Product/powder.png",
       "gallery": [
-        "/images/product/powder.png",
-        "/images/product/powder2.png",
-        "/images/product/powder3.png"
+        "/images/Product/powder.png",
+        "/images/Product/powder2.png",
+        "/images/Product/powder3.png"
       ],
    "description": "Venkatesh Industries supplies premium quality Turmeric Powder made from high-curcumin turmeric roots. Finely ground, hygienically processed, and rich in natural golden color and strong aroma. Ideal for cooking, food processing, medicinal use, bulk supply, and export. Trusted turmeric powder manufacturer offering consistent quality and competitive pricing.",
     "features": [
@@ -82,11 +82,11 @@
     "name": "Salem Jumbo (Lagadi)",
     "slug": "salem-jumbo",
     "category": "Turmeric",
-    "image": "/images/product/jumbo.jpg",
+    "image": "/images/Product/jumbo.jpg",
      "gallery": [
-      "/images/product/jumbo.jpg",
-      "/images/product/jumbo1.jpg",
-      "/images/product/jumbo2.jpg"
+      "/images/Product/jumbo.jpg",
+      "/images/Product/jumbo1.jpg",
+      "/images/Product/jumbo2.jpg"
     ],
    "description": "Premium quality Salem Jumbo (Lagadi) Turmeric sourced from trusted farms with high curcumin content, rich golden color, and strong natural aroma. Carefully cleaned, properly dried, and moisture controlled to ensure purity and long shelf life. Ideal for grinding, spice manufacturing, food processing, bulk supply, and export. Trusted Salem Jumbo supplier offering consistent quality at competitive prices.",
     "features": [
@@ -101,10 +101,10 @@
     "name": "Nizam Finger",
     "slug": "nizam-finger",
     "category": "Turmeric",
-    "image": "/images/product/nizam.png",
+    "image": "/images/Product/nizam.png",
      "gallery": [
-      "/images/product/nizam.png",
-      "/images/product/nizam2.png"
+      "/images/Product/nizam.png",
+      "/images/Product/nizam2.png"
     ],
    "description": "Premium quality Nizam Finger Turmeric sourced from trusted farms with high curcumin content, rich golden color, and strong natural aroma. Carefully cleaned, properly dried, and moisture controlled to ensure purity and long shelf life. Ideal for grinding, spice manufacturing, food processing, bulk supply, and export. Trusted Nizam Finger supplier offering consistent quality at competitive prices.",
     "features": [
@@ -120,10 +120,10 @@
     "name": "Curcuma Turmeric Powder",
     "slug": "curcuma-turmeric-powder",
     "category": "Brand Products",
-    "image": "/images/product/curcuma.png",
+    "image": "/images/Product/curcuma.png",
     "gallery": [
-      "/images/product/curcuma.png",
-      "/images/product/curcuma1.png"
+      "/images/Product/curcuma.png",
+      "/images/Product/curcuma1.png"
     ],
     "description": "Branded Turmeric Powder offering consistent quality, high purity, and rich natural golden color. Processed from premium turmeric roots with Curcumin 5% and above, ensuring strong aroma and authentic flavor. Ideal for cooking, food processing, medicinal use, bulk supply, and export.",
     "features": [
@@ -138,10 +138,10 @@
     "name": "Nature Turmeric Powder",
     "slug": "nature-turmeric-powder",
     "category": "Brand Products",
-    "image": "/images/product/nature.png",
+    "image": "/images/Product/nature.png",
      "gallery": [
-      "/images/product/nature.png",
-      "/images/product/nature1.jpg"
+      "/images/Product/nature.png",
+      "/images/Product/nature1.jpg"
     ],
     "description": "Nature Turmeric Powder made from carefully selected turmeric roots with Curcumin 3% and above. Naturally processed to retain its golden color, mild aroma, and authentic flavor. Ensures consistent quality and purity, making it ideal for daily cooking, food processing, and bulk supply.",
     "features": [
@@ -156,10 +156,10 @@
     "name": "Global Turmeric Powder",
     "slug": "global-turmeric-powder",
     "category": "Brand Products",
-    "image": "/images/product/global.png",
+    "image": "/images/Product/global.png",
     "gallery": [
-      "/images/product/global.png",
-      "/images/product/global1.jpg"
+      "/images/Product/global.png",
+      "/images/Product/global1.jpg"
     ],
     "description": "Premium export-quality Turmeric Powder manufactured as per international standards. Made from carefully selected turmeric roots to ensure consistent color, purity, and curcumin content. Hygienically processed, finely ground, and specially prepared for bulk international supply.",
     "features": [
@@ -176,10 +176,10 @@
     "name": "AT Salem Turmeric Powder",
     "slug": "salem-turmeric-powder",
     "category": "Brand Products",
-    "image": "/images/product/selam.png",
+    "image": "/images/Product/selam.png",
     "gallery": [
-      "/images/product/selam.png",
-      "/images/product/selam1.jpg"
+      "/images/Product/selam.png",
+      "/images/Product/selam1.jpg"
     ],
    "description": "AT Salem Turmeric Powder made from selected Salem turmeric roots with Curcumin content ranging from 2.3% to 2.5%. Finely processed to retain natural golden color, balanced aroma, and consistent purity. Suitable for daily cooking, commercial use, and bulk supply.",
     "features": [
@@ -194,10 +194,10 @@
     "name": "Double Lotus Turmeric Powder",
     "slug": "double-lotus-turmeric-powder",
     "category": "Brand Products",
-    "image": "/images/product/lotus.png",
+    "image": "/images/Product/lotus.png",
      "gallery": [
-      "/images/product/lotus.png",
-      "/images/product/lotus1.jpg"
+      "/images/Product/lotus.png",
+      "/images/Product/lotus1.jpg"
     ],
     "description": "Double Lotus Turmeric Powder processed from quality turmeric roots with Curcumin content ranging from 2% to 2.3%. Finely ground to maintain natural golden color, mild aroma, and consistent purity. Ideal for daily cooking, bulk supply, and commercial spice use.",
 "features": [
@@ -213,12 +213,12 @@
     "name": "Raisins (Dry Grapes)",
     "slug": "indian-raisins",
     "category": "Dry Fruits",
-    "image": "/images/product/kismiss.jpeg",
+    "image": "/images/Product/kismiss.jpeg",
       "gallery": [
-        "/images/product/kismiss.jpeg",
-        "/images/product/kismiss1.jpeg",
-        "/images/product/kismiss2.jpeg",
-        "/images/product/kismiss.png"
+        "/images/Product/kismiss.jpeg",
+        "/images/Product/kismiss1.jpeg",
+        "/images/Product/kismiss2.jpeg",
+        "/images/Product/kismiss.png"
       ],
     "description": "Naturally dried Indian raisins rich in taste and nutrition.",
     "features": [
