@@ -80,7 +80,7 @@ const products = [
   {
     id: 3,
     name: "Bulb Turmeric",
-    image: "/images/Product/bulb.jpg",
+    image: "/images/Product/bulb1.jpg",
   },
   {
     id: 4,
