@@ -63,9 +63,10 @@
     "name": "Turmeric Powder",
     "slug": "turmeric-powder",
     "category": "Turmeric Powder",
-    "image": "/images/Product/powder.png",
+    "image": "/images/Product/Powder.png",
       "gallery": [
-        "/images/Product/powder.png",
+        "/images/Product/Powder.png",
+        "/images/Product/powder1.png",
         "/images/Product/powder2.png",
         "/images/Product/powder3.png"
       ],
@@ -122,8 +123,7 @@
     "category": "Brand Products",
     "image": "/images/Product/curcuma.png",
     "gallery": [
-      "/images/Product/curcuma.png",
-      "/images/Product/curcuma1.png"
+      "/images/Product/curcuma.png"
     ],
     "description": "Branded Turmeric Powder offering consistent quality, high purity, and rich natural golden color. Processed from premium turmeric roots with Curcumin 5% and above, ensuring strong aroma and authentic flavor. Ideal for cooking, food processing, medicinal use, bulk supply, and export.",
     "features": [
