@@ -133,9 +133,9 @@ const Contact = () => {
 
         <div className="info-box">
           <FaClock />
-          <h4>Working Hours</h4>
-          <p>Mon – Sat</p>
-          <p>9:00 AM – 7:00 PM</p>
+          <h4>Factory Address</h4>
+          <p>Plot No B-8/6/7, Miraj Industrial Area</p>
+          <p>Tal–Miraj, Dist–Sangli – 416436</p>
         </div>
 
       </div>
