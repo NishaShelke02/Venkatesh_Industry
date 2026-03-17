@@ -54,7 +54,7 @@ const Services = () => {
             <img src="/images/infra2.png" alt="Turmeric Polishing" />
             <img src="/images/grind.png" alt="Turmeric Grinding" />
             <img src="/images/Home4.png" alt="Quality Testing" />
-            
+            <img src="/images/packaging.jpeg" alt="Packaging" />
             <img src="/images/infra1.png" alt="Storage" />
           </div>
           {/* ===================================== */}
